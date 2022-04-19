@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2B1FE8E-D439-4606-BDE0-7C1F95DC4943}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjectDemo</RootNamespace>
+    <AssemblyName>ProjectDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>496811B04D1BF42A6112C1A99A8061BBA7BFEBDC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProjectDemo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.21.4.0\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.5.0.1\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.5.0.2\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\DataAccess.cs" />
+    <Compile Include="Entity\Admit.cs" />
+    <Compile Include="Entity\Appointment.cs" />
+    <Compile Include="Entity\Bill.cs" />
+    <Compile Include="Entity\Doctor.cs" />
+    <Compile Include="Entity\Employee.cs" />
+    <Compile Include="Entity\Patient.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="Framework\Validation.cs" />
+    <Compile Include="Gui\admitNewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\admitNewPatient.Designer.cs">
+      <DependentUpon>admitNewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\DoctorAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\DoctorAppointments.Designer.cs">
+      <DependentUpon>DoctorAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\FormValidation.cs" />
+    <Compile Include="Gui\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucAddNewEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucAddNewEmployee.Designer.cs">
+      <DependentUpon>ucAddNewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucAddNewPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucAddNewPatient.Designer.cs">
+      <DependentUpon>ucAddNewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucAdmission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucAdmission.Designer.cs">
+      <DependentUpon>ucAdmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucAppointment.Designer.cs">
+      <DependentUpon>ucAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucDoctorAppointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucDoctorAppointments.Designer.cs">
+      <DependentUpon>ucDoctorAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucEmployees.Designer.cs">
+      <DependentUpon>ucEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucFinancials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucFinancials.Designer.cs">
+      <DependentUpon>ucFinancials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucPatientBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucPatientBill.Designer.cs">
+      <DependentUpon>ucPatientBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucPatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucPatients.Designer.cs">
+      <DependentUpon>ucPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\ucUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Gui\ucUsers.Designer.cs">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\updateDoctorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\updateDoctorInfo.Designer.cs">
+      <DependentUpon>updateDoctorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\updateEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\updateEmployee.Designer.cs">
+      <DependentUpon>updateEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\updatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\updatePatient.Designer.cs">
+      <DependentUpon>updatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\BillRepo.cs" />
+    <Compile Include="Repo\DoctorRepo.cs" />
+    <Compile Include="Repo\EmployeeRepo.cs" />
+    <Compile Include="Repo\PatientRepo.cs" />
+    <Compile Include="Repo\UserRepo.cs" />
+    <EmbeddedResource Include="Gui\admitNewPatient.resx">
+      <DependentUpon>admitNewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\DoctorAppointments.resx">
+      <DependentUpon>DoctorAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucAddNewEmployee.resx">
+      <DependentUpon>ucAddNewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucAddNewPatient.resx">
+      <DependentUpon>ucAddNewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucAdmission.resx">
+      <DependentUpon>ucAdmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucAppointment.resx">
+      <DependentUpon>ucAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucDoctorAppointments.resx">
+      <DependentUpon>ucDoctorAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucEmployees.resx">
+      <DependentUpon>ucEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucFinancials.resx">
+      <DependentUpon>ucFinancials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucPatientBill.resx">
+      <DependentUpon>ucPatientBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucPatients.resx">
+      <DependentUpon>ucPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\ucUsers.resx">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\updateDoctorInfo.resx">
+      <DependentUpon>updateDoctorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\updateEmployee.resx">
+      <DependentUpon>updateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\updatePatient.resx">
+      <DependentUpon>updatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="ProjectDemo_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\employee %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\hospitalisation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\employee %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\profile %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\hospitalisation %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\bill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asset\doctor %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

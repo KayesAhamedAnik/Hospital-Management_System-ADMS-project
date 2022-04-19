@@ -1,0 +1,7 @@
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.Gui.csproj.AssemblyReference.cache
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.Gui.login.resources
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.Properties.Resources.resources
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.Gui.csproj.GenerateResource.cache
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.Gui.csproj.CoreCompileInputs.cache
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.exe
+D:\Education\11th Fall 21-22\ADMS\Project\ProjectDemo\ProjectDemo\obj\Debug\ProjectDemo.pdb
